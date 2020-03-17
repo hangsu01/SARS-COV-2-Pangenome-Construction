@@ -43,7 +43,8 @@ Biological features obtained from the reference gff files were annotated to the 
 We further performed the pairwise alignment between each paralleled reference and alternation edge, i.e. edges that share the same source and destination node.
 Since graph genome compress sequence in a graph structure, the computation load for alignment is greately reduced.
 
-### 5. Variants analysis ()
+### 5. Graphical Genome Loading and Variants analysis (CCGG_extension.py, Variants_analysis.py)
+The constructed SARS-Cov_2 graphical genome can be loaded and edited by a generlized version of the CCGG API, CCGG_extension.py.
 Sequence variants can be obtained by comparing the alignment results and merged into a variants table for futher phologenetic analysis.
 
 
