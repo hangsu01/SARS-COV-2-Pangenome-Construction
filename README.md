@@ -23,7 +23,7 @@ Other options of selecting the initial candidates set so as to reduce the refere
 1) Go through every genome and collect all possible kmers from each linear genome, then select the common set of the kmer for mapping.
 2) Construct multi-string Burrows–Wheeler transform (msbwt) for every sample reads and find out the common set of kmer from sample msbwt.
 
-Each kmer is of a unique name embedded by their relative orders, e.g. the linear coordinates of the reference genome.
+Each kmer is of a unique name embedding their relative orders, e.g. the linear coordinates of the reference genome.
 
 ### 2. Genome Registration by anchor candidates (genome_registration_2020.py)
 We map the anchor candidates back to each individual linear genome. 
