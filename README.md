@@ -20,8 +20,11 @@ https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusL
 The Initial anchor candidates set is population-specific. 
 For SARS-Cov-2, currently we select every non-overlapping kmer in the reference assembly as the inital anchor candidates set.
 Other options of selecting the initial candidates set so as to reduce the reference bias as much as possible:
-1) Go through every genome and collect all possible kmers from each linear genome, then select the common set of the kmer for mapping.
-2) Construct multi-string Burrows–Wheeler transform (msbwt) for every sample reads and find out the common set of kmer from sample msbwt.
+1) Go through every genome and collect all possible kmers from each linear genome, then select the maximum set of the kmer for mapping. 
+2) Construct multi-string Burrows–Wheeler transform (msbwt) for every sample reads and find out the maximum set of kmer from sample msbwt.
+Noted that options above may lead to a large size of initial mapping candidates. When incrementally adding the linear genome, the new kmers may have to be remapped to the original linear genomes. This may affect the efficiency of genome registration, especially confronting with a fast growing number of collected sequence data.
+
+A potential way to resolve this reasonably is to focus on a set of old samples, i.e. samples collected at the early time. 
 
 Each kmer is of a unique name embedding their relative orders, e.g. the linear coordinates of the reference genome.
 
