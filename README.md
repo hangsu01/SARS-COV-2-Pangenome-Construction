@@ -22,6 +22,7 @@ For SARS-Cov-2, currently we select every non-overlapping kmer in the reference 
 Other options of selecting the initial candidates set so as to reduce the reference bias as much as possible:
 1) Go through every genome and collect all possible kmers from each linear genome, then select the maximum set of the kmer for mapping. 
 2) Construct multi-string Burrows–Wheeler transform (msbwt) for every sample reads and find out the maximum set of kmer from sample msbwt.
+
 Noted that options above may lead to a large size of initial mapping candidates. When incrementally adding the linear genome, the new kmers may have to be remapped to the original linear genomes. This may affect the efficiency of genome registration, especially confronting with a fast growing number of collected sequence data.
 
 A potential way to resolve this reasonably is to focus on a set of old samples, i.e. samples collected at the early time. 
