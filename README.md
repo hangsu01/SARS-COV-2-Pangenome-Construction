@@ -19,7 +19,7 @@ https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusL
 ### 1. Anchor Candidates selection.(AnchorCandidateSelection.py)
 The Initial anchor candidates set is population-specific. 
 For SARS-Cov-2, currently we select every non-overlapping kmer in the reference assembly as the inital anchor candidates set.
-Other options of selecting the initial candidates set so as to reduce the reference bias as much as possible include:
+Other options of selecting the initial candidates set so as to reduce the reference bias as much as possible:
 1) Go through every genome and collect all possible kmers from each linear genome, then select the common set of the kmer for mapping.
 2) Construct multi-string Burrows–Wheeler transform (msbwt) for every sample reads and find out the common set of kmer from sample msbwt.
 
