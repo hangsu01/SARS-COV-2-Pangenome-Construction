@@ -1,6 +1,6 @@
 # SARS-COV-2 Pangenome
 
-We presented a SARS-CoV-2 graphical genome as a reference pangenome, integrating 179 partial and complete sequence assembly in a single graph representation (updated in time). Here, we generalized the anchor-based linear genome registration and pangenome construction pipeline to construct a SARS-CoV-2 graphical genome. The introduction of anchors, defined as the conserved, unique and consistently ordered sequences in every linear assembly, partitioned and compressed multiple linear genomes in a consistent manner. Sequences between anchors were extracted and merged into edges, which contained all variants in the genome. 
+We presented a SARS-CoV-2 graphical genome as a reference pangenome, integrating 179 partial and complete sequence (NCBI virus platform) assembly in a single graph representation (updated in time). Here, we generalized the anchor-based linear genome registration and pangenome construction pipeline to construct a SARS-CoV-2 graphical genome. The introduction of anchors, defined as the conserved, unique and consistently ordered sequences in every linear assembly, partitioned and compressed multiple linear genomes in a consistent manner. Sequences between anchors were extracted and merged into edges, which contained all variants in the genome. 
 
 
 ## Genome Registration and Pangenome Construction pipeline applied to SARS-COV-2
